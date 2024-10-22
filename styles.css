@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #003366; /* Dark blue */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: #f1c40f; /* Yellow color */
+    width: 600px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.login-box {
+    text-align: center;
+}
+
+h1 {
+    font-size: 48px;
+    color: #012;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-box {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-box label {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.input-box input {
+    padding: 10px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.login-btn {
+    background-color: #e0e0e0;
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    color: #000;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: #ccc;
+}
+.input-box input:focus {
+    border-color: #3498db;
+    outline: none;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    background-color: #123456;
+    width: 200px;
+    padding: 20px;
+    color: white;
+}
+
+.sidebar h2 {
+    font-size: 24px;
+}
+
+.main-content {
+    flex-grow: 1;
+}
+
+.top-bar {
+    background-color: #FFD700;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.top-bar .menu button {
+    margin-right: 20px;
+    font-size: 18px;
+}
+
+.top-bar .menu button:last-child {
+    margin-right: 0;
+}
+
+.top-bar .time p {
+    margin: 0;
+    text-align: right;
+}
+
+.top-bar .sign-out button {
+    background-color: #FF4500;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.promotions {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.promo-item {
+    text-align: center;
+}
+
+.promo-item img {
+    width: 200px;
+    height: auto;
+}
+
+.promo-item p {
+    font-size: 16px;
+    margin-top: 10px;
+}
