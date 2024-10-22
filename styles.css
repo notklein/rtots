@@ -30,7 +30,7 @@ body {
 
 h1 {
     font-size: 48px;
-    color: #000;
+    color: #012;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
     margin-bottom: 30px;
 }
@@ -78,4 +78,83 @@ form {
     border-color: #3498db;
     outline: none;
     box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    background-color: #123456;
+    width: 200px;
+    padding: 20px;
+    color: white;
+}
+
+.sidebar h2 {
+    font-size: 24px;
+}
+
+.main-content {
+    flex-grow: 1;
+}
+
+.top-bar {
+    background-color: #FFD700;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.top-bar .menu button {
+    margin-right: 20px;
+    font-size: 18px;
+}
+
+.top-bar .menu button:last-child {
+    margin-right: 0;
+}
+
+.top-bar .time p {
+    margin: 0;
+    text-align: right;
+}
+
+.top-bar .sign-out button {
+    background-color: #FF4500;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.promotions {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.promo-item {
+    text-align: center;
+}
+
+.promo-item img {
+    width: 200px;
+    height: auto;
+}
+
+.promo-item p {
+    font-size: 16px;
+    margin-top: 10px;
 }

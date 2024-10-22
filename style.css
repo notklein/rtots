@@ -1,0 +1,31 @@
+h1{
+    color: white; /* Set the font color to white */
+    text-shadow: 
+        -2px -2px 0 #000,  /* top-left shadow */
+        2px -2px 0 #000,   /* top-right shadow */
+        -2px 2px 0 #000,   /* bottom-left shadow */
+        2px 2px 0 #000;    /* bottom-right shadow */
+    font-size: 60
+px; /* Set the desired font size */
+}
+
+a{
+    color: rgb(223, 215, 215); /* Set the font color to white */
+    text-shadow: 
+        -2px -2px 0 #000,  /* top-left shadow */
+        2px -2px 0 #000,   /* top-right shadow */
+        -2px 2px 0 #000,   /* bottom-left shadow */
+        2px 2px 0 #000;    /* bottom-right shadow */
+    font-size: 45px; /* Set the desired font size */ 
+    text-align: center;
+}
+body{
+    background-color: #003366; /* Set the background color */
+}
+
+
+.flex-center {
+    display: flex;
+    justify-content: center; /* Centers items horizontally */
+}
+
