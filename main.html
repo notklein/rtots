@@ -1,29 +1,71 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>
-            HUNGRY PATSY
-        </title>
-       <link rel="stylesheet" href="mainstyle.css"/>
-    </head>
-    <body>
-        
-        <nav class="sidebar">
-                <div class="brand-container">
-                    <img src="hungry patsy no bg.png" width="200">
-                </div>
+<head>
+    <title>HUNGRY PATSY</title>
+    <link rel="stylesheet" href="mainstyle.css"/>
+    <link rel="stylesheet" href="mainmenu.css"/>
+    
+</head>
+<body>
 
-                <div class="links-container">
-                    <a class="link" href="tracker.html">Tracker</a>
-                    <a class="link" href="inventory.html">Inventory</a>
-                    <a class="link" href="analytics.html">Analytics</a>
-                </div>
-        </nav>
-        
-       <nav class="navigationbar">
-            <h2 class="pagetitle">Main Menu</h2>
+<nav class="sidebar">
+    <div class="brand-container">
+        <img src="hungry patsy no bg.png" width="200">
+    </div>
+    <div class="links-container">
+        <a class="link" href="tracker.html">Tracker</a>
+        <a class="link" href="inventory.html">Inventory</a>
+        <a class="link" href="analytics.html">Analytics</a>
+    </div>
+</nav>
 
-       </nav>
-        
-    </body>
-</html> 
+<nav class="navigationbar">
+    <h2 class="pagetitle">Main Menu</h2>
+</nav>
+
+<!-- Main content area for slideshow -->
+<div class="main-content">
+    <!-- Slideshow Section -->
+    <div class="slideshow-container">
+        <img class="slides active" src="nypizza.jpg" alt="Pizza 1">
+        <img class="slides" src="hungrypatsyinfo.jpg" alt="Pizza 2">
+        <img class="slides" src="hungrypatsyinfo2.jpg" alt="Pizza 3">
+        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+    </div>
+</div>
+
+<script>
+   let slideIndex = 0; // Start from the first slide
+    showSlides();
+
+    function showSlides() {
+        const slides = document.getElementsByClassName("slides");
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none"; // Hide all slides
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+            slideIndex = 1; // Reset to the first slide
+        }
+        slides[slideIndex - 1].style.display = "block"; // Show the current slide
+        setTimeout(showSlides, 3000); // Change slide every 3 seconds
+    }
+
+    function changeSlide(n) {
+        slideIndex += n; // Change slide index
+        const slides = document.getElementsByClassName("slides");
+        if (slideIndex > slides.length) {
+            slideIndex = 1; // Loop to first slide
+        } else if (slideIndex < 1) {
+            slideIndex = slides.length; // Loop to last slide
+        }
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none"; // Hide all slides
+        }
+        slides[slideIndex - 1].style.display = "block"; // Show the selected slide
+    }
+</script>
+
+</body>
+</html>

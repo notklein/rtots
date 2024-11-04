@@ -1,0 +1,50 @@
+html, body {
+    height: 100%; /* Ensure the body takes the full height */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+}
+
+/* Sidebar styles */
+.sidebar {
+    background-color: #003566;
+    width: 300px;
+    height: 100%; /* Full height */
+    position: fixed; /* Keep the sidebar fixed */
+    border-bottom-right-radius: 15px;
+    box-shadow: 0 0 5px 3px rgba(0,0,0,0.5);
+}
+
+/* Navigation bar styles */
+.navigationbar {
+    margin-left: 300px; /* Space for the sidebar */
+    background-color: #FFC300;
+    padding: 15px; /* Adjust padding to fit */
+    text-align: center;
+}
+
+/* Make the main content area take remaining height */
+.main-content {
+    flex-grow: 1; /* Allow this area to grow and fill space */
+    margin-left: 300px; /* Align with the sidebar */
+    display: flex; /* Use flexbox in this area */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+/* Slideshow styles */
+.slideshow-container {
+    position: relative;
+    width: 100%; /* Full width of the main content area */
+    height: calc(100% - 50px); /* Adjust height based on navbar size */
+    overflow: hidden; /* Hide overflow */
+}
+
+.slides {
+    display: none; /* Hide all slides by default */
+    width: 100%; /* Full width of the container */
+    height: 100%; /* Fill the entire height of the container */
+    object-fit: cover; /* Maintain aspect ratio and cover the area */
+}

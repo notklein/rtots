@@ -54,3 +54,33 @@ body{
         2px 2px 0 #000;    /* bottom-right shadow */
     font-size: 30px
 }
+
+.addremoveorder{
+    display: inline-block;
+    margin: 10px 400px;
+    padding: 10px 20px;
+   
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    border-color: #003566;
+    border-width: 5px;
+    
+    
+}
+
+
+
+#removeorder{
+    background-color: tomato;
+}
+
+#addorder{
+    background-color: green;
+}
+
+/*para sa main menu pciture start*/
+
+
+
+/*para sa main menu end*/
