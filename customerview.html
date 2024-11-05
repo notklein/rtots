@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hungry Patsy - Customer Order Tracker</title>
+    <link rel="stylesheet" href="customerview.css"/>
+   
+</head>
+<body>
+    <nav class="navigationbar">
+        <h2 class="pagetitle">Order Tracker</h2>
+
+   </nav>
+    
+    <div class="customer-orders">
+        
+        <div class="order-list">
+            
+            <ul id="orders">
+                <!-- Orders will be dynamically inserted here -->
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        function loadOrders() {
+            const orders = JSON.parse(localStorage.getItem('orders')) || [];
+            const ordersList = document.getElementById('orders');
+            ordersList.innerHTML = ''; // Clear the existing list
+
+            orders.forEach(order => {
+                const li = document.createElement('li');
+                li.textContent = `${order.customerName} - Status: ${order.orderStatus}`;
+                ordersList.appendChild(li);
+            });
+        }
+
+        // Load orders on page load
+        window.onload = loadOrders;
+
+        // Optionally, auto-refresh every 5 seconds
+        setInterval(loadOrders, 5000);
+    </script>
+</body>
+</html>

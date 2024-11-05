@@ -1,0 +1,53 @@
+.order-input {
+    margin-bottom: 20px; /* Space below input fields */
+}
+
+.order-input input, .order-input select {
+    padding: 10px;
+    margin: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.order-list ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+}
+
+.order-list li {
+    margin-left: 300px;/* Space between orders */
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#removeorder{
+    background-color: tomato;
+}
+
+#addorder{
+    background-color: green;
+}
+
+.addremoveorder{
+    display: inline-block;
+    margin: 10px 400px;
+    padding: 10px 20px;
+   
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    border-color: #003566;
+    border-width: 5px;
+    
+    
+}
+
+#updateStatus{
+    background-color: rgb(136, 136, 45);
+}
+/*start*/
+
+
+/*end*/

@@ -1,0 +1,54 @@
+ /* Center the order display */
+ .customer-orders {
+    margin: auto;
+    padding: 20px;
+    max-width: 600px;
+}
+
+.order-list {
+    font-family: Arial, sans-serif;
+    margin-top: 20px;
+}
+
+.order-list h3 {
+    font-size: 24px;
+    text-align: center;
+}
+
+#orders {
+    list-style-type: none;
+    padding: 0;
+}
+
+#orders li {
+    background-color: #f8f8f8;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    font-size: 18px;
+}
+
+.navigationbar {
+   
+    background-color: #FFC300;
+    padding: 20px; /* Adjust padding to fit */
+    text-align: center;
+    
+}
+
+body{
+    margin: 0;
+    background-color: #003566;
+}
+
+.pagetitle{
+    font-family: Verdana;
+    color: white; /* Set the font color to white */
+    text-shadow: 
+        -2px -2px 0 #000,  /* top-left shadow */
+        2px -2px 0 #000,   /* top-right shadow */
+        -2px 2px 0 #000,   /* bottom-left shadow */
+        2px 2px 0 #000;    /* bottom-right shadow */
+    font-size: 30px
+}

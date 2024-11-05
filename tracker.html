@@ -1,33 +1,40 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>
-            HUNGRY PATSY
-        </title>
-       <link rel="stylesheet" href="mainstyle.css"/>
-    </head>
-    <body>
-        
-        <nav class="sidebar">
-                <div class="brand-container">
-                    <img src="hungry patsy no bg.png" width="200">
-                </div>
+<head>
+    <title>HUNGRY PATSY</title>
+    <link rel="stylesheet" href="mainstyle.css"/>
+    <link rel="stylesheet" href="trackerstyle.css"/>
+</head>
+<body>
+    <nav class="sidebar">
+        <div class="brand-container">
+            <img src="hungry patsy no bg.png" width="200">
+        </div>
 
-                <div class="links-container">
-                    <a class="link" href="main.html">Main Menu</a>
-                    <a class="link" href="inventory.html">Inventory</a>
-                    <a class="link" href="analytics.html">Analytics</a>
-                </div>
-        </nav>
-        
-       <nav class="navigationbar">
+        <div class="links-container">
+            <a class="link" href="main.html">Main Menu</a>
+            <a class="link" href="inventory.html">Inventory</a>
+            <a class="link" href="analytics.html">Analytics</a>
+        </div>
+    </nav>
+
+    <div class="main-content">
+        <nav class="navigationbar">
             <h2 class="pagetitle">Real Time Order Tracker</h2>
+        </nav>
 
-       </nav>
+        <button id="addorder" class="addremoveorder">Add Order</button>
+        <button id="removeorder" class="addremoveorder">Remove Order</button>
+        <button id="updateStatus" class="addremoveorder">Update Status</button>
+        <div class="order-list">
+            <h3>Current Orders</h3>
+            <ul id="orders">
+                <!-- Dynamic order list will be populated here -->
+            </ul>
+        </div>
+    </div>
 
-       <button id="addorder"  class="addremoveorder">Add Order</button>
-       <button id="removeorder" class="addremoveorder">Remove Order</button>
-       
-        
-    </body>
-</html> 
+<script src="/socket.io/socket.io.js"></script>
+<script src="tracker.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>
