@@ -3,7 +3,7 @@
 <head>
     <title>Hungry Patsy - Customer Order Tracker</title>
     <link rel="stylesheet" href="customerview.css"/>
-   
+    <link rel="icon" type="image/ico" href="favicon.ico">
 </head>
 <body>
     <nav class="navigationbar">
@@ -21,24 +21,6 @@
         </div>
     </div>
 
-    <script>
-        function loadOrders() {
-            const orders = JSON.parse(localStorage.getItem('orders')) || [];
-            const ordersList = document.getElementById('orders');
-            ordersList.innerHTML = ''; // Clear the existing list
-
-            orders.forEach(order => {
-                const li = document.createElement('li');
-                li.textContent = `${order.customerName} - Status: ${order.orderStatus}`;
-                ordersList.appendChild(li);
-            });
-        }
-
-        // Load orders on page load
-        window.onload = loadOrders;
-
-        // Optionally, auto-refresh every 5 seconds
-        setInterval(loadOrders, 5000);
-    </script>
+    <script src="customer.js"></script>
 </body>
 </html>

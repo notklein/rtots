@@ -9,10 +9,15 @@ app.use(cors());
 
 // Connect to MongoDB
 mongoose.connect('mongodb://localhost:27017/pizzaOrders', {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-}).then(() => console.log('Connected to MongoDB'))
-  .catch(err => console.error('MongoDB connection error:', err));
+    // Remove the deprecated options
+    // useNewUrlParser: true,
+    // useUnifiedTopology: true
+}).then(() => {
+    console.log('MongoDB connected successfully!');
+}).catch((err) => {
+    console.error('MongoDB connection error:', err);
+});
+
 
 // Order Schema
 const orderSchema = new mongoose.Schema({

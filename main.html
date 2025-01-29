@@ -4,7 +4,7 @@
     <title>HUNGRY PATSY</title>
     <link rel="stylesheet" href="mainstyle.css"/>
     <link rel="stylesheet" href="mainmenu.css"/>
-    
+    <link rel="icon" type="image/ico" href="favicon.ico">
 </head>
 <body>
 
@@ -17,6 +17,7 @@
         <a class="link" href="inventory.html">Inventory</a>
         <a class="link" href="analytics.html">Analytics</a>
     </div>
+    <button id="logoutButton" class="logout-btn">Logout</button>
 </nav>
 
 <nav class="navigationbar">
@@ -35,37 +36,7 @@
     </div>
 </div>
 
-<script>
-   let slideIndex = 0; // Start from the first slide
-    showSlides();
 
-    function showSlides() {
-        const slides = document.getElementsByClassName("slides");
-        for (let i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none"; // Hide all slides
-        }
-        slideIndex++;
-        if (slideIndex > slides.length) {
-            slideIndex = 1; // Reset to the first slide
-        }
-        slides[slideIndex - 1].style.display = "block"; // Show the current slide
-        setTimeout(showSlides, 3000); // Change slide every 3 seconds
-    }
-
-    function changeSlide(n) {
-        slideIndex += n; // Change slide index
-        const slides = document.getElementsByClassName("slides");
-        if (slideIndex > slides.length) {
-            slideIndex = 1; // Loop to first slide
-        } else if (slideIndex < 1) {
-            slideIndex = slides.length; // Loop to last slide
-        }
-        for (let i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none"; // Hide all slides
-        }
-        slides[slideIndex - 1].style.display = "block"; // Show the selected slide
-    }
-</script>
-
+<script src="main.js"></script>
 </body>
 </html>
